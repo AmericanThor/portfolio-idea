@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+    scroll-behavior: auto;
+}
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+}
+
+/* End Reset */
+body {
+  font-family: 'Raleway', sans-serif;
+
+  background-color: #222222;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* nav styles */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #f2f2f2;
+  gap: 15px;
+  padding-left: 20px;
+}
+
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+
+.nav__link {
+  position: fixed;
+  width: 90%;
+  top: 5rem;
+  left: 18px;
+  background-color: #222222;
+}
+
+.nav__link a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  color: #f2f2f2;
+}
+
+
+.nav__link a:hover {
+  color: #0e3d69;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .nav__link a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+.kick {
+  position: relative;
+  left: 15%;
+}
+.main-container-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 25px 0 25px;
+  position: relative;
+  text-align: center;
+}
+.main-container-home img{
+overflow: hidden;
+}
+.centered-high {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #f2f2f2;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #f2f2f2;
+  font-size: 1.6rem;
+}
+.centered-low {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #f2f2f2;
+}
+
+.centered-lowest {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #f2f2f2;
+  font-size: 1.6rem;
+}
+
+.centered-right{
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: #f2f2f2;
+  font-size: 1.6rem;
+}
+
+/* Portfolio */
+
+h1 {
+  padding: 100px 0 20px 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media {
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+}
+
+.layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 80%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+  p {
+    transition: all 0.9s ease;
+    transform: scale(0.1)
+  }
+}
+
+p {
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing:1px;
+}
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+}
+
+/* @media (max-width: 800px){
+  body {
+    transform: scale(0.6);
+  }
+} */
+
+@media (max-width: 600px) {
+    .wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
