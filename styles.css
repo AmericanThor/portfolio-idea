@@ -89,18 +89,32 @@ a {
 /* End Reset */
 body {
   font-family: 'Raleway', sans-serif;
-
   background-color: #222222;
+ /* background:
+linear-gradient(135deg, #222222 25%, transparent 90%) -50px 0,
+linear-gradient(225deg, #222222 25%, transparent 90%) -50px 0,
+linear-gradient(315deg, #222222 25%, transparent 90%),
+linear-gradient(45deg, #222222 25%, transparent 85%);
+background-size: 100px 100px;  */
 }
 
 a {
   text-decoration: none;
   color: black;
   font-family: 'Raleway', sans-serif;
-
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -999;
 }
 
 /* nav styles */
@@ -121,7 +135,9 @@ a {
   gap: 15px;
   padding-left: 20px;
 }
-
+.logo-img{
+  height: 1.6rem;
+}
 
 .hamburger {
   padding-right: 20px;
@@ -141,7 +157,7 @@ a {
   display: block;
   text-align: center;
   padding: 10px 0;
-  color: #f2f2f2;
+  color: #f2f2f28d;
 }
 
 
@@ -173,8 +189,10 @@ a {
 }
 .kick {
   position: relative;
-  left: 15%;
+  left: 10%;
+  bottom: 0;
 }
+
 .main-container-home {
   display: flex;
   justify-content: center;
@@ -183,16 +201,14 @@ a {
   position: relative;
   text-align: center;
 }
-.main-container-home img{
-overflow: hidden;
-}
+
 .centered-high {
   position: absolute;
   top: 35%;
   left: 30%;
   transform: translate(-50%, -50%);
   color: #f2f2f2;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 800;
 }
 
@@ -202,23 +218,32 @@ overflow: hidden;
   left: 30%;
   transform: translate(-50%, -50%);
   color: #f2f2f2;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .centered-low {
   position: absolute;
-  top: 50%;
+  top: 51%;
   left: 30%;
   transform: translate(-50%, -50%);
   color: #f2f2f2;
+  font-size: 1.25rem;
 }
 
 .centered-lowest {
   position: absolute;
   top: 60%;
-  left: 30%;
+  left: 28%;
   transform: translate(-50%, -50%);
   color: #f2f2f2;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+}
+.centered-lowest2 {
+  position: absolute;
+  top: 60%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  color: #f2f2f2;
+  font-size: 1.5rem;
 }
 
 .centered-right{
@@ -228,6 +253,10 @@ overflow: hidden;
   transform: translate(-50%, -50%);
   color: #f2f2f2;
   font-size: 1.6rem;
+}
+main.div a
+:hover {
+  color: #0e3d69;
 }
 
 /* Portfolio */
@@ -239,6 +268,7 @@ h1 {
   text-align: center;
   color: #f2f2f2;
 }
+
 
 .wrapper {
   display: flex;
@@ -306,5 +336,11 @@ p {
     .wrapper {
     display: flex;
     flex-direction: column;
-
+    }
 }
+
+
+
+/* CONTACT */
+
+.contact-wrapper{

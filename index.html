@@ -6,38 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/4c0efa6f12.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js">
     <title>Kody Koester</title>
   </head>
   <body>
     <header>
       <nav class="nav">
-        <a href="/" class="logo"><img src="/assets/60.png" alt="">Kody Koester</a>
+        <a href="/" class="logo"><img class="logo-img" src="/assets/60.png" alt="">Kody Koester</a>
 
         <div class="hamburger">
-          <img src="/assets/burger.png" alt="">
+          <img class="logo-img" src="/assets/burger.png" alt="">
         </div>
 
         <div class="nav__link hide">
-          <a href="#">about</a>
+          <a href="about.html">about</a>
           <a href="portfolio.html">portfolio</a>
-          <a href="#">contact</a>
+          <a href="contact.html">contact</a>
         </div>
       </nav>
     </header>
 
     <main class="main-container-home">
+      
       <div class="kick"><img src="/assets/headshot-removebg-preview.png" alt=""></div>
       <div class="centered-high">Hi, I'm Kody!</div>
-      <div class="centered">Athlete. Philosopher. Coach.</div>
-      <div class="centered-low">Who just so happens to be a web developer.</div>
-      <a href=""><div class="centered-lowest"><i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i></a> <i class="fa-brands fa-linkedin fa-lg"></i></div>
-      <!-- <div class="centered-right">Contact Me!</div> -->
-
+      <div style="color: #f2f2f28d;"class="centered">Athlete. Philosopher. Coach.</div>
+      <div style="color: #f2f2f28d;" class="centered-low">Who just so happens to be a web developer.</div>
+      <a href="https://github.com/AmericanThor"><div class="centered-lowest"><i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i></a></div>
+      <a href="https://www.linkedin.com/in/kodykoester/"><div class="centered-lowest2"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a></div>
     </main>
 
 
+    <canvas class="background"></canvas>
+
     <script src="./script.js"></script>
-  
+    <script src="/node_modules/particlesjs/dist/particles.min.js"></script>
+
   </body>
 </html>
